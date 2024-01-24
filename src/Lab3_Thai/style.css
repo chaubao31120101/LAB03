@@ -1,0 +1,21 @@
+.timeline {
+    position: relative;
+    height: 10px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff8c00;
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff9900;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
