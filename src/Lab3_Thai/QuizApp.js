@@ -1,10 +1,9 @@
 // QuizApp.js
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
 import Question from "./Question";
 import Result from "./Score";
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { DOM_KEY_LOCATION } from "@testing-library/user-event/dist/keyboard/types";
+import "./style.css"
 
 class QuizApp extends Component {
   constructor(props) {
@@ -134,10 +133,10 @@ class QuizApp extends Component {
     } = this.state;
 
     return (
-      <div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="p-5 d-flex justify-content-center align-items-center vh-100">
         {!quizEnd ? (
-          <div>
-            <div className="timeline">
+          <div className="bg-secondary rounded-top">
+            <div className="timeline rounded">
               <div
                 className="progress"
                 style={{ width: `${timer / 2}%` }}

@@ -1,7 +1,6 @@
 // Question.js
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style.css";
 const Question = ({
   quest,
   options,
@@ -11,7 +10,7 @@ const Question = ({
   questionNumber,
 }) => {
   return (
-    <div className="bg-secondary text-light p-5 justify-content-center">
+    <div className="text-light p-5">
       <h2>{`Question ${questionNumber}: ${quest}`}</h2>
       <ul className="list-group">
         {options.map((option, index) => (
